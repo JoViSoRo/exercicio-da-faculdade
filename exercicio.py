@@ -17,22 +17,27 @@ totalDeAlunos = numeroDeAlunos
 
 while numeroDeAlunos > 0:
     alunos.append(input('Nome do aluno: '))
+    
     nota1 = float(input('Nota da primeira AOP - * Nota entre 0.0 a 1.0 *: '))
     if nota1 > 1:
         print(f'A nota da primeira AOP, só pode valer até 1 ponto, e você colocou {nota1}')
         exit()
+
     nota2 = float(input('Nota da segunda AOP - * Nota entre 0.0 a 2.0 *: '))
     if nota2 > 2:
         print(f'A nota da segunda AOP, só pode valer até 2 ponto, e você colocou {nota2}')
         exit()
+
     nota3 = float(input('Nota da terceira AOP - * Nota entre 0.0 a 1.0 *: '))
     if nota3 > 1:
         print(f'A nota da terceira AOP, só pode valer até 1 ponto, e você colocou {nota3}')
         exit()
+
     nota4 = float(input('Nota da prova regular - * Nota entre 0.0 a 6.0 *: '))
     if nota4 > 6:
         print(f'A nota da prova 4, só pode valer até 6 ponto, e você colocou {nota4}')
         exit()
+
     medias.append(nota1 + nota2 + nota3 + nota4)
     numeroDeAlunos = numeroDeAlunos - 1
     print(' ')
