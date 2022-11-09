@@ -29,7 +29,7 @@ while numeroDeAlunos > 0:
         nota3 = float(input(f'\033[031mA nota da terceira AOP, só pode valer até 1 ponto e você colocou {nota3},por favor, digite a nota da AOP 3 novamente? '))
 # ---------------------------------------------------------------------------------- #
     nota4 = float(input('\033[036mNota da prova regular - * Nota entre 0.0 a 6.0 *: '))
-    while nota1 > 6 or nota1 < 0:
+    while nota4 > 6 or nota4 < 0:
         nota4 = float(input(f'\033[031mA nota da prova 4, só pode valer até 6 ponto e você colocou {nota4},por favor, digite a nota da prova novamente?  '))
 # ---------------------------------------------------------------------------------- #
     medias.append(nota1 + nota2 + nota3 + nota4)
