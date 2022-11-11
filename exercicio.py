@@ -1,14 +1,9 @@
 # FAZER SEU CÓDIGO AQUI:
 
-print('\033[036m=' * 50)
-print('           Universidade de Vila Velha')
-print('A maior universidade particular do Espirito Santo')
-print('=' * 50)
-
 alunos = []
 medias = []
 quantidadeAprovado = 0
-numeroDeAlunos = 100   #Modifique o numero de alunos com base no que voce quiser 😎👍
+numeroDeAlunos = 2  #Modifique o numero de alunos com base no que voce quiser 😎👍
 nomeDosAlunos = numeroDeAlunos
 totalDeAlunos = numeroDeAlunos
 
@@ -40,8 +35,9 @@ while nomeDosAlunos > 0:
     nomeDosAlunos = nomeDosAlunos - 1
     if medias[nomeDosAlunos] < 7:
         print('\033[033m=' * 50)
-        notarecuperacao = float(input(
-            f'Aluno {alunos[nomeDosAlunos]} está quase reprovando, por favor, ensira a nota da prova de recuperação: '))
+        notarecuperacao = float(input(f'Aluno {alunos[nomeDosAlunos]} está quase reprovando, por favor, ensira a nota da prova de recuperação: '))
+        notarecuperacao = (notarecuperacao + medias[nomeDosAlunos]) / 2
+    
 
         if notarecuperacao >= 5:
             print('\033[032m=' * 50)
@@ -62,5 +58,3 @@ porcentagem = (quantidadeAprovado * 100) / totalDeAlunos
 porcentagemReprovados = (porcentagem - 100) * -1
 print(f'Quantidade Aprovado: {porcentagem: .2f}%')
 print(f'Quantidade Reprovados: {porcentagemReprovados: .2f}%')
-
-
